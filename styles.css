@@ -1,0 +1,32 @@
+/* Custom styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Animation for floating WhatsApp button */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.fab.fa-whatsapp {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Custom button hover effects */
+.btn-hover-effect {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Lord's Awareness Chapel International</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="images/church-logo.jpg" alt="Church Logo" class="h-12"> 
+                    <a href="index.html" class="text-xl font-bold">THE LORD'S AWARENESS CHAPEL INTERNATIONAL</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="programs.html" class="hover:text-yellow-300">Programs</a>
+                    <a href="services.html" class="hover:text-yellow-300">Services</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 pb-4">
+                <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+                <a href="about.html" class="block py-2 hover:text-yellow-300">About Us</a>
+                <a href="programs.html" class="block py-2 hover:text-yellow-300">Programs</a>
+                <a href="services.html" class="block py-2 hover:text-yellow-300">Services</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+            </div>
+        </nav>
+        <!-- ... same nav content ... -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold text-center mb-8">Contact Us</1>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-800">Get in Touch</h2>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg w-full transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <div id="formSuccess" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded-lg">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-6 text-blue-800">Contact Information</h2>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-blue-800 mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Address</h3>
+                                    <p>123 Faith Avenue</p>
+                                    <p>City, State 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-800 mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Phone</h3>
+                                    <p>+1 (234) 567-8900</p>
+                                    <p>Office Hours: Mon-Fri, 9AM-5PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-800 mr-4 mt-1">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">Email</h3>
+                                    <p>info@lordsawareness.org</p>
+                                    <p>prayer@lordsawareness.org (Prayer Requests)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold mb-6 text-blue-800">Connect With Us</h2>
+                        
+                        <div class="flex space-x-4 justify-center mb-6">
+                            <a href="#" class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-pink-700 transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-700 transition duration-300">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="https://wa.me/12345678901" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg inline-flex items-center transition duration-300">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Location Map</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256751766!2d-73.98784492416425!3d40.74844097138985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuMiJX!5e0!3m2!1sen!2sus!4v1623256789012!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-blue-900 text-white pt-12 pb-6">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">About Us</h3>
+                        <p class="mb-4">The Lord's Awareness Chapel International is a Bible-believing church committed to spreading the gospel.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                            <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                            <li><a href="programs.html" class="hover:text-yellow-300">Programs</a></li>
+                            <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+                            <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Service Times</h3>
+                        <ul class="space-y-2">
+                            <li>Sunday Worship: 8:00 AM & 10:30 AM</li>
+                            <li>Bible Study: Wednesday 6:30 PM</li>
+                            <li>Prayer Meeting: Thurday 6:30 PM</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Atico Market-Accra-Ghana></li>
+                            <li><i class="fas fa-phone mr-2"></i> +233 (245) 075851</li>
+                            <li><i class="fab fa-whatsapp mr-2"></i> +233 (245) 075851</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; <span class="current-year">2025</span> The Lord's Awareness Chapel International. All rights reserved.</p>
+                </div>
+            </div>
+        <!-- ... same footer content ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button (same as index.html) -->
+    <a href="https://wa.me/233245075851" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

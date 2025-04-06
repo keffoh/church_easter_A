@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Lord's Awareness Chapel International</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="images/church-logo.jpg" alt="Church Logo" class="h-12"> 
+                    <a href="index.html" class="text-xl font-bold">THE LORD'S AWARENESS CHAPEL INTERNATIONAL</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="programs.html" class="hover:text-yellow-300">Programs</a>
+                    <a href="services.html" class="hover:text-yellow-300">Services</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 pb-4">
+                <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+                <a href="about.html" class="block py-2 hover:text-yellow-300">About Us</a>
+                <a href="programs.html" class="block py-2 hover:text-yellow-300">Programs</a>
+                <a href="services.html" class="block py-2 hover:text-yellow-300">Services</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+            </div>
+        </nav>
+        <!-- ... same nav content ... -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold text-center mb-8">About Our Church</h1>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Our History</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                            The Lord's Awareness Chapel International was founded in 1995 by Pastor John Smith with a vision 
+                            to create a place of worship where people could experience the tangible presence of God.
+                        </p>
+                        <p class="text-gray-700 mb-4 text-lg leading-relaxed">
+                            Starting with just a handful of members meeting in a small rented space, the church has grown 
+                            to become a vibrant community of believers with multiple campuses across the region.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1508357941501-0924cf312bbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Church building" class="w-full rounded-lg shadow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Our Beliefs</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">The Bible</h3>
+                        <p class="text-gray-700">
+                            We believe the Bible is the inspired, infallible, authoritative Word of God.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">The Trinity</h3>
+                        <p class="text-gray-700">
+                            We believe in one God eternally existing in three persons: Father, Son, and Holy Spirit.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">Salvation</h3>
+                        <p class="text-gray-700">
+                            We believe salvation is received through repentance toward God and faith in Jesus Christ.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">The Church</h3>
+                        <p class="text-gray-700">
+                            We believe the Church is the body of Christ with a divine mission to preach the gospel to all nations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Our Leadership</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Pastor John Smith" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold">Pastor John Smith</h3>
+                        <p class="text-blue-700">Senior Pastor</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Pastor Sarah Johnson" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold">Pastor Sarah Johnson</h3>
+                        <p class="text-blue-700">Associate Pastor</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Deacon Michael Brown" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold">Deacon Michael Brown</h3>
+                        <p class="text-blue-700">Head of Deacons</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-blue-900 text-white pt-12 pb-6">
+        <footer class="bg-blue-900 text-white pt-12 pb-6">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">About Us</h3>
+                        <p class="mb-4">The Lord's Awareness Chapel International is a Bible-believing church committed to spreading the gospel.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                            <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                            <li><a href="programs.html" class="hover:text-yellow-300">Programs</a></li>
+                            <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+                            <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Service Times</h3>
+                        <ul class="space-y-2">
+                            <li>Sunday Worship: 8:00 AM & 10:30 AM</li>
+                            <li>Bible Study: Wednesday 6:00 PM</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Faith Avenue, City</li>
+                            <li><i class="fas fa-phone mr-2"></i> +1 (234) 567-8900</li>
+                            <li><i class="fab fa-whatsapp mr-2"></i> +1 (234) 567-8901</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; <span class="current-year">2023</span> The Lord's Awareness Chapel International. All rights reserved.</p>
+                </div>
+            </div>
+        <!-- ... same footer content ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button (same as index.html) -->
+    <a href="https://wa.me/12345678901" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

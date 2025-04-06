@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - The Lord's Awareness Chapel International</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="images/church-logo.jpg" alt="Church Logo" class="h-12"> 
+                    <a href="index.html" class="text-xl font-bold">THE LORD'S AWARENESS CHAPEL INTERNATIONAL</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300">Home</a>
+                    <a href="about.html" class="hover:text-yellow-300">About Us</a>
+                    <a href="programs.html" class="hover:text-yellow-300">Programs</a>
+                    <a href="services.html" class="hover:text-yellow-300">Services</a>
+                    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 pb-4">
+                <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+                <a href="about.html" class="block py-2 hover:text-yellow-300">About Us</a>
+                <a href="programs.html" class="block py-2 hover:text-yellow-300">Programs</a>
+                <a href="services.html" class="block py-2 hover:text-yellow-300">Services</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300">Contact</a>
+            </div>
+        </nav>
+        <!-- ... same nav content ... -->
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold text-center mb-8">Our Programs</h1>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Weekly Programs</h2>
+                
+                <div class="space-y-6">
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-2xl font-bold mb-2">Sunday Worship Services</h3>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> 8:00 AM & 10:30 AM</p>
+                        <p class="text-gray-700">
+                            Join us for uplifting worship, prayer, and biblical teaching that transforms lives. 
+                            Our services are designed to help you connect with God and grow in your faith.
+                        </p>
+                    </div>
+                    
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-2xl font-bold mb-2">Midweek Bible Study</h3>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Wednesdays at 6:00 PM</p>
+                        <p class="text-gray-700">
+                            A deeper dive into God's Word with practical applications for daily living. 
+                            This interactive study helps believers grow in their understanding of Scripture.
+                        </p>
+                    </div>
+                    
+                    <div class="border-b border-gray-200 pb-6">
+                        <h3 class="text-2xl font-bold mb-2">Prayer Meetings</h3>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Tuesdays at 6:00 PM</p>
+                        <p class="text-gray-700">
+                            Corporate prayer is the engine room of the church. Join us as we intercede for our church, 
+                            community, nation, and the world.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Youth Fellowship</h3>
+                        <p class="text-gray-600 mb-2"><i class="far fa-clock mr-2"></i> Fridays at 5:00 PM</p>
+                        <p class="text-gray-700">
+                            A dynamic gathering for young people ages 13-25 with relevant teaching, worship, 
+                            and fun activities in a Christ-centered environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Special Programs</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-blue-800 text-4xl mb-4">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Children's Ministry</h3>
+                        <p class="text-gray-700 mb-4">
+                            Age-appropriate Bible teaching and activities for children from birth through 5th grade.
+                        </p>
+                        <a href="#" class="text-blue-700 hover:text-blue-900 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-blue-800 text-4xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Men's & Women's Fellowships</h3>
+                        <p class="text-gray-700 mb-4">
+                            Monthly gatherings that provide encouragement, discipleship, and fellowship for men and women.
+                        </p>
+                        <a href="#" class="text-blue-700 hover:text-blue-900 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-blue-800 text-4xl mb-4">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Music & Arts Ministry</h3>
+                        <p class="text-gray-700 mb-4">
+                            Opportunities to use your musical and artistic gifts to glorify God and serve the church.
+                        </p>
+                        <a href="#" class="text-blue-700 hover:text-blue-900 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                        <div class="text-blue-800 text-4xl mb-4">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Outreach & Missions</h3>
+                        <p class="text-gray-700 mb-4">
+                            Local and international missions opportunities to share the love of Christ in practical ways.
+                        </p>
+                        <a href="#" class="text-blue-700 hover:text-blue-900 font-semibold">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-blue-800">Upcoming Events</h2>
+                
+                <div class="space-y-6">
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Annual Church Retreat</h3>
+                                <p class="text-gray-600"><i class="far fa-calendar-alt mr-2"></i> June 15-17, 2023</p>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <a href="#" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg inline-block transition duration-300">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Vacation Bible School</h3>
+                                <p class="text-gray-600"><i class="far fa-calendar-alt mr-2"></i> July 10-14, 2023</p>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <a href="#" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg inline-block transition duration-300">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold mb-1">Marriage Enrichment Seminar</h3>
+                                <p class="text-gray-600"><i class="far fa-calendar-alt mr-2"></i> August 5, 2023</p>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <a href="#" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-lg inline-block transition duration-300">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-blue-900 text-white pt-12 pb-6">
+        <footer class="bg-blue-900 text-white pt-12 pb-6">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">About Us</h3>
+                        <p class="mb-4">The Lord's Awareness Chapel International is a Bible-believing church committed to spreading the gospel.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                            <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+                            <li><a href="programs.html" class="hover:text-yellow-300">Programs</a></li>
+                            <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+                            <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Service Times</h3>
+                        <ul class="space-y-2">
+                            <li>Sunday Worship: 8:00 AM & 10:30 AM</li>
+                            <li>Bible Study: Wednesday 6:00 PM</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Faith Avenue, City</li>
+                            <li><i class="fas fa-phone mr-2"></i> +1 (234) 567-8900</li>
+                            <li><i class="fab fa-whatsapp mr-2"></i> +1 (234) 567-8901</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; <span class="current-year">2023</span> The Lord's Awareness Chapel International. All rights reserved.</p>
+                </div>
+            </div>
+        <!-- ... same footer content ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button (same as index.html) -->
+    <a href="https://wa.me/12345678901" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
